@@ -135,3 +135,12 @@ BEGIN
        OR c.email ILIKE '%' || p_termo || '%';
 END;
 $$ LANGUAGE plpgsql;
+
+SELECT * FROM vw_painel_principal;
+
+SELECT * FROM vw_cronograma_prazos;
+
+SELECT * FROM fn_buscar_colaboradores('silva');
+SELECT * FROM fn_buscar_colaboradores('@consultoria');
+
+SELECT * FROM historico_tarefas;
